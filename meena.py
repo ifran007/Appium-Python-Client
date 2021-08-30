@@ -35,19 +35,27 @@ class MeenaBazarAPI(unittest.TestCase):
     #     # self.driver.find_element_by_xpath('//*[@class= android.widget.EditText]').send_keys('Aarong Ghee')
     #     sleep(3)
     #
-    # # def test_Offer(self):
-    # # #     self.driver.get("https://www.meenaclick.com/")
-    # #     self.driver.find_element_by_xpath('android.view.View[@content-desc="Offers Tab 1 of 2"]').click()
+    # def test_Offer(self):
+    #     self.driver.find_element_by_accessibility_id('Offers 87').click()
+        # self.driver.find_element_by_xpath('//android.widget.ImageView[@content-desc="Offers 87"]"]').click()
+
     #
     # def test_002_Menu(self):
     #     self.driver.find_element_by_xpath('//android.widget.ImageView[@content-desc="Menu"]').click()
 
-    def test_004_User(self):
-        # sleep(5)
-        self.driver.find_element_by_xpath('//android.view.View[@content-desc="User Tab 4 of 5"]').click()
-        self.driver.find_element_by_xpath('//android.widget.Button[@content-desc="Tap to Login"]').click()
-        self.driver.find_element_by_xpath('//android.widget.Button[@content-desc="Log In"]').click()
-        sleep(2)
+    # def test_004_User(self):
+    #     # sleep(5)
+    #     self.driver.find_element_by_xpath('//android.view.View[@content-desc="User Tab 4 of 5"]').click()
+    #     self.driver.find_element_by_xpath('//android.widget.Button[@content-desc="Tap to Login"]').click()
+    #     self.driver.find_element_by_xpath('//android.widget.Button[@content-desc="Log In"]').click()
+    #     sleep(2)
+
+    # def test_005_Menu_BabyCare(self):
+    #     self.driver.find_element_by_xpath('//android.widget.ImageView[@content-desc="Menu"]').click()
+    #     self.driver.find_element_by_xpath('//android.view.View[@content-desc="Baby Care"]').click()
+
+    def test_006_Menu_Area(self):
+        self.driver.find_element_by_accessibility_id('Area: Select Delivery Area').click()
 
     def tearDown(self):
         self.driver.quit()
