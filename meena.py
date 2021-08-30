@@ -37,7 +37,7 @@ class MeenaBazarAPI(unittest.TestCase):
     #
     # def test_Offer(self):
     #     self.driver.find_element_by_accessibility_id('Offers 87').click()
-        # self.driver.find_element_by_xpath('//android.widget.ImageView[@content-desc="Offers 87"]"]').click()
+    # self.driver.find_element_by_xpath('//android.widget.ImageView[@content-desc="Offers 87"]"]').click()
 
     #
     # def test_002_Menu(self):
